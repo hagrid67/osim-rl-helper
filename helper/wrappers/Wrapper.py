@@ -1,4 +1,8 @@
-class EnvironmentWrapper:
+
+
+import gym
+
+class EnvironmentWrapper(gym.Wrapper):
     def __init__(self, env):
         """
         A base template for all environment wrappers.

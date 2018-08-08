@@ -4,7 +4,7 @@ import numpy as np
 from .Wrapper import EnvironmentWrapper
 
 
-class ClientToEnv:
+class ClientToEnv(object):
     def __init__(self, client):
         """
         Wrapper that reformats client environment to a local environment format,

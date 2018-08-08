@@ -111,6 +111,10 @@ class DictToListLegacy(EnvironmentWrapper):
         https://github.com/stanfordnmbl/osim-rl/blob/master/osim/env/osim.py
         https://github.com/stanfordnmbl/osim-rl/issues/129
         """
+
+        if state_desc is None:
+            return None
+
         # Augmented environment from the L2R challenge
         res = []
         pelvis = None
