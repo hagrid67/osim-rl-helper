@@ -15,7 +15,8 @@ class ClientToEnv(object):
         self.reset = client.env_reset
         self.step  = client.env_step
         self.submit = client.submit
-        self.time_limit = 300
+        #self.time_limit = 300
+        self.time_limit = 1000 
         self.action_space = gym.spaces.Box(low=0, high=1, shape=(19, ),
                                            dtype=np.float32)
 
